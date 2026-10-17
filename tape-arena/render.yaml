@@ -1,8 +1,0 @@
-services:
-  - type: web
-    name: tape-arena
-    runtime: docker
-    plan: free
-    envVars:
-      - key: ADMIN_KEY
-        generateValue: true
