@@ -1,12 +1,15 @@
+```dockerfile
 FROM node:22-alpine
 
 WORKDIR /app
 
-COPY frontend/package*.json ./
+COPY package*.json ./
+
 RUN npm install --omit=dev
 
-COPY frontend/ .
+COPY . .
 
-EXPOSE 3000
+EXPOSE 8000
 
 CMD ["npm", "start"]
+```
